@@ -1,0 +1,148 @@
+/* utility classes */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container{
+  margin: 0 15px;
+}
+
+button.customButton{
+  padding: 8px 22px;
+  border-radius: 8px;
+  border: none;
+  background-color: #FDB64D;
+  font-size: 13px;
+  cursor: pointer;
+}
+.clearFloat{
+  clear: right;
+}
+input[type=text], select, input[type=date] {
+  padding: 5px 8px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+/* Style */
+table{
+  width: 100%;
+  min-width: 800px;
+  overflow: scroll;
+}
+thead td{
+  padding: 12px 5px;
+  border-bottom: 2px solid #F2F1EF;
+}
+tbody td{
+  padding: 8px 5px;
+}
+tbody td:nth-last-child(){
+  padding-left: 50px;
+}
+tbody tr:not(:first-child) td{
+  border-top: 1px solid #F2F1EF;
+}
+tbody td button{
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+tbody td img{
+  width: 15px;
+}
+tbody td .badge {
+  border-radius: 6px;
+  padding: 3px 3px;
+  color: #fff;
+  width: 80px;
+  display: inline-block;
+  text-align: center;
+  font-size: 13px;
+}
+tbody td.valide .badge {
+  background-color: #5BE881;
+}
+tbody td.rejected .badge {
+  background-color: #FF0000;
+}
+tbody td.on-validation .badge {
+  background-color: #FDB64D;
+}
+
+.addContainer{
+  margin-top: 30px;
+  float: right;
+}
+
+
+
+/* Modal Style */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  border-radius: 7px;
+  background-color: #fbfbfb;
+  padding: 20px;
+  width: 80%; 
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+}
+/* Modal Header */
+.modal-header {
+  padding: 2px 16px;
+  color: #000;
+}
+
+/* Modal Body */
+.modal-body {
+  padding: 2px 16px;
+  margin-top: 30px;
+}
+.modal-body .formContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 30px;
+}
+.modal-body .formContainer .formControl:nth-child(5){
+  grid-column: 2 / span 2;
+}
+.modal-body .formContainer .formControl label{
+  display: block;
+  margin-bottom: 2px;
+}
+.modal-footer {
+  padding: 2px 16px;
+  margin-top: 20px;
+  float: right;
+}
+
+
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+

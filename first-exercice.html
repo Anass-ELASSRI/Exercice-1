@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Date de création</td>
+                    <td>Etat</td>
+                    <td>Nom</td>
+                    <td>Prénom</td>
+                    <td>Nom d'utilisateur</td>
+                    <td>Matricule</td>
+                    <td>Action</td>
+                </tr>
+            </thead>
+            <tbody id="usersData">
+            </tbody>
+        </table>
+        <div class="addContainer">
+            <button class="customButton" id="add-button">Ajouter utilisateur</button>
+        </div>
+    </div>
+    <div id="add-modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Ajouter utilisateurs</h2>
+            </div>
+            <div class="modal-body">
+                <div class="formContainer">
+                    <div class="formControl">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom">
+                    </div>
+                    <div class="formControl">
+                        <label for="prenom">Prénom</label>
+                        <input type="text" id="prenom">
+                    </div>
+                    <div class="formControl">
+                        <label for="etat">Etat</label>
+                        <select id="etat">
+                            <option value="" selected>--Please choose an option--</option>
+                            <option value="En validation">En validation</option>
+                            <option value="Validé">Validé</option>
+                            <option value="Rejeté">Rejeté</option>
+                        </select>
+                    </div>
+                    <div class="formControl">
+                        <label for="nomUtilisateur">Nom d'utilisateur</label>
+                        <input type="text" id="nomUtilisateur">
+                    </div>
+                    <div class="formControl">
+                        <label for="dateCreation">Date de création</label>
+                        <input type="date" id="dateCreation">
+                    </div>
+                    <div class="formControl">
+                        <label for="matricule">Matricule</label>
+                        <input type="text" id="matricule">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="customButton" id="save-button">Enregistrer</button>
+            </div>
+            <div class="clearFloat"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
